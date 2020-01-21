@@ -1,6 +1,7 @@
 <?php
 $name = $_POST['name'];
 $surname = $_POST['surname'];
+$email=$_POST['email'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,13 +14,16 @@ $surname = $_POST['surname'];
     <label>Name</label>    <input type="text" name="name">
     <label>SurName</label>
     <input type="text" name="surname">
+    <label>Email</label>
+    <input type="email" name="surname">
     <input type="submit" name="done">
+
 </form>
 </body>
 </html>
 
 <?php
-if (isset($_POST['done'])&& $name !="" ){
-echo "Hello, ".$name." ".$surname;
+if (isset($_POST['done'])&& $name !="" && $surname !=""&& $email !=""){
+echo "Hello, ".$name." ".$surname."<br />"."Your email is:".$email;
 }
 ?>

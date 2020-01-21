@@ -1,4 +1,5 @@
 <?php
 $name = $_POST['name'];
-echo "Hello, ".$name;
+$surname = $_POST['surname'];
+echo "Hello, ".$name." ".$surname;
 

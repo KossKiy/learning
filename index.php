@@ -2,6 +2,7 @@
 $name = $_POST['name'];
 $surname = $_POST['surname'];
 $email = $_POST['email'];
+
 ?>
 <!DOCTYPE html>
 <html lang="en">

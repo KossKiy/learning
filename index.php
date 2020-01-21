@@ -1,4 +1,4 @@
 <?php
-$name = "Костя";
+$name = $_GET['name'];
 echo "Hello, ".$name;
 

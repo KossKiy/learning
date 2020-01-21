@@ -1,7 +1,7 @@
 <?php
 $name = $_POST['name'];
 $surname = $_POST['surname'];
-$email=$_POST['email'];
+$email = $_POST['email'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -11,7 +11,8 @@ $email=$_POST['email'];
 </head>
 <body>
 <form method="post" action="../learning/index.php">
-    <label>Name</label>    <input type="text" name="name">
+    <label>Name</label>
+    <input type="text" name="name">
     <label>SurName</label>
     <input type="text" name="surname">
     <label>Email</label>
@@ -23,7 +24,7 @@ $email=$_POST['email'];
 </html>
 
 <?php
-if (isset($_POST['done'])&& $name !="" && $surname !=""&& $email !=""){
-echo "Hello, ".$name." ".$surname."<br />"."Your email is:".$email;
+if (isset($_POST['done']) && $name != "" && $surname != "" && $email != "") {
+    echo "Hello, " . $name . " " . $surname . "<br />" . "Your email is:" . $email;
 }
 ?>
